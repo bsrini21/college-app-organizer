@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ffcad4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation Tabs */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffee93;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tablink {
+    background-color: #ffee93;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.tablink:hover {
+    background-color: #ffd1dc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form and List Styles */
+form input, form select, form textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background-color: #ff9aa2;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+    padding: 8px 12px;  
+    width: auto;  
+    max-width: 200px;  
+}
+
+button:hover {
+    background-color: #ff7096;
+}
+
+/* College List Colors */
+li.safety {
+    color: #4CAF50; 
+}
+
+li.target {
+    color: #FFB74D;
+}
+
+li.reach {
+    color: #F44336; 
+}
+
+/* Spacing for Edit/Delete Buttons */
+.college-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.college-item-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Notes and Scholarships Sections */
+#note-list li, #scholarship-list-items li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#note-list button, #scholarship-list-items button {
+    margin-left: 10px;
+    padding: 5px 8px;  
+    font-size: 0.8rem;
+    max-width: 150px;
+}
