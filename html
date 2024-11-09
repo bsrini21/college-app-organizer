@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future U - College Application Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Future U - College Application Organizer</h1>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav>
+        <a href="#" class="tablink" onclick="openTab(event, 'welcome')">Welcome & Instructions</a>
+        <a href="#" class="tablink" onclick="openTab(event, 'calendar-countdown')">Calendar + Countdown</a>
+        <a href="#" class="tablink" onclick="openTab(event, 'college-list')">College List</a>
+        <a href="#" class="tablink" onclick="openTab(event, 'essay-tracker')">Essay Tracker</a>
+        <a href="#" class="tablink" onclick="openTab(event, 'notes')">Notes</a>
+        <a href="#" class="tablink" onclick="openTab(event, 'ai-tool')">AI Tool</a>
+        <a href="#" class="tablink" onclick="openTab(event, 'scholarships')">Scholarships</a>
+    </nav>
+
+    <!-- Welcome Page -->
+    <section id="welcome" class="tabcontent">
+        <h2>Welcome to Future U!</h2>
+        <p>This tool will help you organize and track all your college application tasks, from tracking your application progress to managing deadlines and notes. Below are descriptions of each feature you can use:</p>
+        
+        <ul>
+            <li><strong>Calendar + Countdown:</strong> Track important events and application deadlines by adding them to the calendar. A countdown will show you how many days are left until the event.</li>
+            <li><strong>College List:</strong> Add colleges to your list and categorize them as Safety, Target, or Reach schools. You can also edit or delete colleges as needed.</li>
+            <li><strong>Essay Tracker:</strong> Keep track of your college essays, manage drafts, and ensure that all your essays are on schedule for completion.</li>
+            <li><strong>Notes:</strong> Jot down any important thoughts, tasks, or ideas in the Notes section. You can edit or delete notes at any time.</li>
+            <li><strong>AI Tool:</strong> Enter AI tools or resources that might help with your applications, such as research or essay review tools.</li>
+            <li><strong>Scholarships:</strong> Track scholarship opportunities. Add the name, deadline, and a link to the scholarship. You can also delete scholarships once they are no longer relevant.</li>
+        </ul>
+
+        <p>Each tab will help you stay on top of your college application process, ensuring that no deadlines or tasks are missed. Use the navigation above to start organizing your journey to college success!</p>
+    </section>
+
+    <!-- Calendar + Countdown -->
+    <section id="calendar-countdown" class="tabcontent">
+        <h2>Calendar + Countdown</h2>
+        <form id="event-form">
+            <input type="text" id="event-name" placeholder="Enter Event Name" required>
+            <input type="date" id="event-date" required>
+            <button type="submit">Add Event</button>
+        </form>
+        <ul id="event-list"></ul>
+    </section>
+
+    <!-- College List -->
+    <section id="college-list" class="tabcontent">
+        <h2>College List</h2>
+        <form id="college-form">
+            <input type="text" id="college-name" placeholder="Enter College Name" required>
+            <select id="college-category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="safety">Safety (Green)</option>
+                <option value="target">Target (Orange)</option>
+                <option value="reach">Reach (Red)</option>
+            </select>
+            <button type="submit">Add College</button>
+        </form>
+        <ul id="college-list-items"></ul>
+    </section>
+
+    <!-- Notes Section -->
+    <section id="notes" class="tabcontent">
+        <h2>Notes</h2>
+        <form id="note-form">
+            <textarea id="note-text" placeholder="Type your note here..." required></textarea>
+            <button type="submit">Save Note</button>
+        </form>
+        <ul id="note-list"></ul>
+    </section>
+
+    <!-- AI Tool (formerly Recommendation Letters) -->
+    <section id="ai-tool" class="tabcontent">
+        <h2>AI Tool</h2>
+        <form id="ai-tool-form">
+            <input type="text" id="ai-tool-name" placeholder="Enter AI Tool Name" required>
+            <button type="submit">Add Tool</button>
+        </form>
+        <ul id="ai-tool-list"></ul>
+    </section>
+
+    <!-- Scholarships Section -->
+    <section id="scholarships" class="tabcontent">
+        <h2>Scholarship List</h2>
+        <form id="scholarship-form">
+            <input type="text" id="scholarship-name" placeholder="Enter Scholarship Name" required>
+            <input type="date" id="scholarship-date" required>
+            <input type="url" id="scholarship-link" placeholder="Enter Scholarship Link" required>
+            <button type="submit">Add Scholarship</button>
+        </form>
+        <ul id="scholarship-list-items"></ul>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
